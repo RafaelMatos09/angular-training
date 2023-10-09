@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-first-angular-project": {
+    "sales-project": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-first-angular-project",
+            "outputPath": "dist/sales-project",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "my-first-angular-project:build:production"
+              "browserTarget": "sales-project:build:production"
             },
             "development": {
-              "browserTarget": "my-first-angular-project:build:development"
+              "browserTarget": "sales-project:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-first-angular-project:build"
+            "browserTarget": "sales-project:build"
           }
         },
         "test": {
@@ -99,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "e8664245-45f4-4739-8373-8f555046cf7b"
+    "analytics": "0b0a7a87-f3b3-4b17-a304-18e964d9a2e1"
   }
 }
